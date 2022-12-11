@@ -1,0 +1,153 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Andrés Hernández}}\\
+	ainfanthe@gmail.com \textbar{} ainfanteh@unal.edu.co $\cdot$ (321) 459-7130\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Universidad Nacional de Colombia}\hfill Bogotá, DC\\
+Degree in Systems engineering and computer science \hfill Jan 2021 - in progress\\
+\vspace{2mm}
+\textbf{Servicio Nacional de Aprendizaje}\hfill Arauca, Arauca\\
+Administrative assistance technician \hfill Jan 2018 - Nov 2020\\
+\vspace{2mm}
+\textbf{University of Michigan}\hfill Distance learning course\\
+Python programming \hfill Jan 2022 - Dec 2022\\
+\vspace{2mm}
+\textbf{Imperial College London}\\
+Mathematics for machine learning\\
+\vspace{2mm}
+\textbf{The Hong Kong university of science and technology}\\
+Mathematics for engineers\\
+\vspace{2mm}
+\textbf{Universidad Nacional Autónoma de México}\hfill MOOC\\
+Introducción a Data Science: programación Estadística con R\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Teleperformance} \hfill Bogotá, DC\\
+\textit{Customer representative} \hfill May 2021 - in progress\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Did cool stuff and customer representative in company
+\end{itemize}
+
+\header{Dexterity or capabilities}
+\begin{tabular}{ l l }
+	Programming languages:             & Python \{flask, django\}, JavaScript, Matlab, R                    \\
+	Markup languages:                  & Html, Markdown, Gemtext, LaTex, Xml, Xhtml                         \\
+	Technical:                         & Technical and non-technical communication or writing               \\
+	Git or version control:            & Github \& Gitlab                                                   \\
+	Technological \& digital literacy: & Research \{data analysis\}                                         \\
+	Machine learning:                  & GANs, difussion models, mathematics and other interesting stuff    \\
+	And so on:                         & Critical thinking, Technological savviness, Ability to adapt, etc. \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{Music genre clasification}} {\sl Python} \\
+In a more systematic way, the main aim was to create a machine learning model, which classifies music samples into different genres. Predict the genre using an audio signal as its input.\\
+\vspace*{2mm}
+{\textbf{Matlab Tic Tac Toe}} {\sl Matlab} \hfill https://github.com/ainfanthe/Tic-Tac-Toe\\
+A simple implementation of the traditional Tic Tac Toe in a Matlab 3 x 3 matrix using App Design, with declaration of some predefined conditionals such as computer moves and possibility of mode change.\\
+\vspace*{2mm}
+{\textbf{Student management system}} {\sl Python} \\
+Python CRUD using SQLite3 and PyQt5, in it can perform the following operations: accept, display, search, delete and update information\\
+\vspace*{2mm}
+{\textbf{Python writing}}\\
+Practical Python guide structured in lecture notes\\
+\vspace*{2mm}
+{\textbf{Personal webpage::in progress}} {\sl Html, Css, Javascript} \\
+Web in what i can appreciate reflected my understandings and interests, among other things that in autognosis I am questioned. It has its equal for the Gemini protocol\\
+\vspace*{2mm}
+{\textbf{Im\textquotesingle{}Dither: web application for dithering images}} {\sl Javascript, Vue} \\
+
+\vspace*{2mm}
+{\textbf{Static website generator}}\\
+
+\vspace*{2mm}
+
+\header{Awards}
+\textbf{High School Honor Diploma} \hfill Institución Educativa Técnica Simón Bolívar\\
+\hfill Nov 2020\\
+\vspace*{2mm}
+
+\ 
+\end{document}
